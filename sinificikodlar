@@ -1,1 +1,15 @@
 
+kullanici_adi=(input("kullanici adi? :"))
+kullanici_soyadi=(input("kullanici soyadi? :"))
+kullanici_numarasi=(input("kullanici numarasi? :"))
+
+dosya = open("kullanıcı_bilgileri.txt","w")
+
+print("kullanıcı adı :",kullanici_adi,file=dosya)
+print("kullancı soyadı:",kullanici_soyadi, file=dosya)
+print("kullancı numarası:",kullanici_numarasi, file=dosya)
+dosya.close()
+
+import os
+print(os.getcwd())
+
